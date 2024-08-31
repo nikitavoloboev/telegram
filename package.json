@@ -1,0 +1,27 @@
+{
+	"name": "test-telegram",
+	"scripts": {
+		"dev": "cd app && bun dev",
+		"app": "cd app && bun dev",
+		"api": "cd api && bun dev",
+		"web": "cd web && bun dev",
+		"build:app": "bun run --filter 'app' build",
+		"build:web": "bun run --filter 'web' build",
+		"cli": "cd api && bun run --watch run.ts"
+	},
+	"dependencies": {
+		"ronin": "^4.1.12"
+	},
+	"devDependencies": {
+		"bun-types": "^1.1.21"
+	},
+	"workspaces": [
+		"api",
+		"app",
+		"web"
+	],
+	"prettier": {
+		"semi": false,
+		"useTabs": true
+	}
+}
