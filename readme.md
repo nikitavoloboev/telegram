@@ -1,4 +1,4 @@
-# Test Telegram
+# Telegram
 
 > Testing Telegram mini apps, bots, TON integrations
 
